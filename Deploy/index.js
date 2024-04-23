@@ -13,7 +13,7 @@ async function runExample() {
 
     // Create a new inference session and load the model
     let session = new onnx.InferenceSession();
-    await session.loadModel("./Pitch_Type_Model.onnx");
+    await session.loadModel("./Pitch_Type_Model_2.onnx");
 
     // Run the model
     let outputMap = await session.run({input: tensorX});
